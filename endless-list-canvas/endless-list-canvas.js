@@ -186,7 +186,7 @@ EndlessList = function(param){
 				drawed = false;
 				if(heightList[i] == undefined)
 				{
-					_height = loopFunction(zero, i);
+					_height = loopFunction(zero+_totalHeight, i);
 					heightList[i] = _height;
 					drawed = true;
 				}
@@ -197,7 +197,7 @@ EndlessList = function(param){
 				_totalHeight += heightList[i];
 				if(_totalHeight > -zero && _totalHeight-heightList[i] < -zero+offset.height && drawed == false)
 				{
-					_height = loopFunction(zero, i);
+					_height = loopFunction(zero+_totalHeight-heightList[i], i);
 					if(_height != heightList[i])
 					{
 						_totalHeight = _totalHeight - heightList[i] + _height;
