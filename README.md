@@ -10,13 +10,13 @@ If you are doing a HTML5 application for mobile, it is good for you to try it.
 
 Features
 ------------
-Mobile, Finger motion recognition, Endless list, Act the same with native list, High performance
+Mobile, Finger motion recognition, Endless list, Act the same with native list, High performance, Do not rely on other libraries, 5KB size
 
 Device support
 --------------
 IOS 6+
 
-Android 2.3+ (soon)
+Android 2.3+ (have not tested)
 
 Demo
 --------------
