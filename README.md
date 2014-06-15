@@ -15,6 +15,7 @@ Mobile, Finger motion recognition, Endless list, Act the same with native list, 
 Device support
 --------------
 IOS 6+
+
 Android 2.3+ (soon)
 
 Demo
@@ -45,7 +46,10 @@ How to use
 			DPI: ...,			//is 1 or 2. 
 								//If the Dots Per Inch of your screen is high, it is 2
 			main: function(positionY, count){},  
-								//your drawing function for each row. PositionY is the start Y position of the row. Count is the number of the row. This function should return a height of the row. If there is no return, the list will end.
+								//your drawing function for each row. PositionY is the
+								//start Y position of the row. Count is the number of
+								//the row. This function should return a height of the
+								//row. If there is no return, the list will end.
 
 			///////////////
 			/*other param*/
