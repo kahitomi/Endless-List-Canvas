@@ -10,7 +10,7 @@ If you are doing a HTML5 application for mobile, it is good for you to try it.
 
 Features
 ------------
-Mobile, Finger motion recognition, Endless list, Act the same with native list, High performance, Do not rely on other libraries, 5KB size
+Mobile, Finger motion recognition, Endless list, The same animation with native application, High performance, Do not rely on other libraries, Easy to use, 5KB size
 
 Device support
 --------------
@@ -22,7 +22,7 @@ Demo
 --------------
 Please visit with a mobile device. It dose not work on desktop.
 
-###[Demo](http://jsbin.com/buxiq/3/)
+###[Demo click me](http://jsbin.com/buxiq/3/)
 
 It contains 10,000 rows and has a touch reaction on each row.
 
