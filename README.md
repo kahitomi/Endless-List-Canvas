@@ -22,7 +22,7 @@ Demo
 --------------
 Please visit with a mobile device. It dose not work on desktop.
 
-###[Demo click me](http://jsbin.com/buxiq/3/)
+###[Demo click me](http://jsbin.com/buxiq/4/)
 
 It contains 10,000 rows and has a touch reaction on each row.
 

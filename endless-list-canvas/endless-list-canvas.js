@@ -299,29 +299,33 @@ EndlessList = function(param){
 			}
 			var _page = ePageXY(e),
 				moveBlock = function(){
-				var nowAdd = (finger.y-fingerStart.y),
-					nowPoint = zero+nowAdd,
-					_bottom = inheight+nowPoint-offset.height;
-				if(nowPoint > 0)
-				{
-					nowPoint = nowPoint/1.2;////////Move back distance
-					pull();
-					outing = true;
-				}
-				else if(_bottom < 0 && offset.height<=inheight)
-				{
-					nowPoint = offset.height-inheight+_bottom/1.2;////////Move back distance
-					outing = true;
-				}
-				if(nowPoint != NaN)
-				{
-					inheight = mainDraw(nowPoint);
-				}
-				if(_bottom < offset.height)
-				{
-					pullup();
-				}
-			};
+					// console.log("enter");
+					var nowAdd = (finger.y-fingerStart.y),
+						nowPoint = zero+nowAdd,
+						_bottom = inheight+nowPoint-offset.height;
+					// console.log(nowPoint);
+					if(nowPoint > 0)
+					{
+						// console.log("zai");
+						nowPoint = nowPoint/1.7;////////Move back distance
+						pull();
+						outing = true;
+					}
+					else if(_bottom < 0 && offset.height<=inheight)
+					{
+						// console.log("ewq");
+						nowPoint = offset.height-inheight+_bottom/1.7;////////Move back distance
+						outing = true;
+					}
+					if(nowPoint != NaN)
+					{
+						inheight = mainDraw(nowPoint);
+					}
+					if(_bottom < offset.height)
+					{
+						pullup();
+					}
+				};
 			now = new Date();
 			/*finger positions*/
 	        finger.x = (_page.x-offset.left)*DPI || finger.x;
@@ -414,11 +418,11 @@ EndlessList = function(param){
 							_bottom = inheight+nowPoint-offset.height;
 						if(nowPoint > 0)
 						{
-							nowPoint = nowPoint/1.2;
+							nowPoint = nowPoint/1.7;
 						}
 						else if(_bottom < 0)
 						{
-							nowPoint = offset.height-inheight+_bottom/1.2;
+							nowPoint = offset.height-inheight+_bottom/1.7;
 						}
 						outing = false;
 						zero = nowPoint;
